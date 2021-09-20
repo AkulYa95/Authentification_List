@@ -70,6 +70,9 @@
                                                                 <integer key="value" value="10"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="forgotUserNameButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Laa-ft-AII"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeF-Mt-uF2">
                                                         <rect key="frame" x="142.5" y="0.0" width="132.5" height="30"/>
@@ -83,6 +86,9 @@
                                                                 <integer key="value" value="10"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="forgotPasswordButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="CJ2-My-9nM"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -105,8 +111,8 @@
                     <connections>
                         <outlet property="passwordTF" destination="XbZ-lx-Lnu" id="Xaf-91-elB"/>
                         <outlet property="userNameTF" destination="faX-eh-LB4" id="Osy-LI-AeA"/>
-                        <outletCollection property="forgotButtons" destination="nI4-Gx-Tnx" collectionClass="NSMutableArray" id="Pr8-tD-Di5"/>
-                        <outletCollection property="forgotButtons" destination="KeF-Mt-uF2" collectionClass="NSMutableArray" id="eJ7-Qy-a4w"/>
+                        <outletCollection property="forgotButtons" destination="nI4-Gx-Tnx" collectionClass="NSMutableArray" id="pBq-en-7ZQ"/>
+                        <outletCollection property="forgotButtons" destination="KeF-Mt-uF2" collectionClass="NSMutableArray" id="F20-7Z-rtd"/>
                         <segue destination="bey-Js-KOL" kind="presentation" identifier="resultSegue" modalPresentationStyle="fullScreen" id="jcY-Qn-R4X"/>
                     </connections>
                 </viewController>

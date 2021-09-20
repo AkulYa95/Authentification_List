@@ -36,7 +36,7 @@ class ViewController: UIViewController {
             performSegue(withIdentifier: "resultSegue", sender: nil)
         } else {
         wrongData()
-        clearTF()
+            passwordTF.text = nil
     }
     }
     @IBAction func forgotUserNameButtonPressed() {
@@ -52,8 +52,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        userNameTF.text = ""
-        passwordTF.text = ""
+        clearTF()
     }
     
     func clearTF() {
@@ -82,10 +81,10 @@ extension ViewController: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == userNameTF {
+            textField.resignFirstResponder()
             passwordTF.becomeFirstResponder()
         } else if textField == passwordTF {
         logInButtonPressed()
-        textField.resignFirstResponder()
         }
         return true
     }
