@@ -15,7 +15,5 @@ class SecondViewController: UIViewController {
         greetingLabel.text = text
 
         super.viewDidLoad()
-
     }
-    
 }
