@@ -28,7 +28,11 @@ class ViewController: UIViewController {
         passwordTF.delegate = self
         
         setupViewController()
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        userNameTF.becomeFirstResponder()
     }
     
     @IBAction func logInButtonPressed() {
